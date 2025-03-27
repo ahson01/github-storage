@@ -60,7 +60,7 @@ storage.revert_to_version("data/file.txt", sha="commit_sha")
 ## 🧪 CLI Usage
 
 ```bash
-python github_storage.py --token <GH_TOKEN> --repo <username/repo> [options] <command>
+github_storage. --token <GH_TOKEN> --repo <username/repo> [options] <command>
 ```
 
 ### CLI Arguments
@@ -80,7 +80,7 @@ python github_storage.py --token <GH_TOKEN> --repo <username/repo> [options] <co
 Upload a local file to GitHub.
 
 ```bash
-python github_storage.py --token TOKEN --repo user/repo store-file <repo_path> <local_file_path> [--msg "commit message"]
+github_storage. --token TOKEN --repo user/repo store-file <repo_path> <local_file_path> [--msg "commit message"]
 ```
 
 #### `store-bytes`
@@ -88,7 +88,7 @@ python github_storage.py --token TOKEN --repo user/repo store-file <repo_path> <
 Store a string as bytes in GitHub.
 
 ```bash
-python github_storage.py --token TOKEN --repo user/repo store-bytes <repo_path> <content_string>
+github_storage --token TOKEN --repo user/repo store-bytes <repo_path> <content_string>
 ```
 
 #### `read-file`
@@ -96,7 +96,7 @@ python github_storage.py --token TOKEN --repo user/repo store-bytes <repo_path> 
 Read a file and print or save locally.
 
 ```bash
-python github_storage.py --token TOKEN --repo user/repo read-file <repo_path> [--save-to local_path]
+github_storage --token TOKEN --repo user/repo read-file <repo_path> [--save-to local_path]
 ```
 
 #### `delete-file`
@@ -104,7 +104,7 @@ python github_storage.py --token TOKEN --repo user/repo read-file <repo_path> [-
 Delete a file or chunked file.
 
 ```bash
-python github_storage.py --token TOKEN --repo user/repo delete-file <repo_path>
+github_storage. --token TOKEN --repo user/repo delete-file <repo_path>
 ```
 
 #### `list-versions`
@@ -112,7 +112,7 @@ python github_storage.py --token TOKEN --repo user/repo delete-file <repo_path>
 List recent commit history for a path.
 
 ```bash
-python github_storage.py --token TOKEN --repo user/repo list-versions <repo_path> [--limit 5]
+github_storage --token TOKEN --repo user/repo list-versions <repo_path> [--limit 5]
 ```
 
 #### `revert`
@@ -120,7 +120,7 @@ python github_storage.py --token TOKEN --repo user/repo list-versions <repo_path
 Revert a file to a previous version using commit SHA.
 
 ```bash
-python github_storage.py --token TOKEN --repo user/repo revert <repo_path> <commit_sha>
+github_storage --token TOKEN --repo user/repo revert <repo_path> <commit_sha>
 ```
 
 ---
