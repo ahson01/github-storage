@@ -6,7 +6,7 @@ A more robust file-based storage system on GitHub. Provides:
 
 - Store, read, update, delete files
 - Optional chunking for large files
-- Optional compression (zlib)
+- Optional compression(zlib)
 - Optional AES encryption
 - List commit history (versions)
 - Revert a file to a previous commit
